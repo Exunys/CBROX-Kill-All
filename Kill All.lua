@@ -1,14 +1,3 @@
---[[
-
-		██╗░░░██╗██████╗░██╗░█████╗░░█████╗░░██████╗████████╗
-		██║░░░██║██╔══██╗██║██╔══██╗██╔══██╗██╔════╝╚══██╔══╝
-		██║░░░██║██████╦╝██║██║░░╚═╝███████║╚█████╗░░░░██║░░░
-		██║░░░██║██╔══██╗██║██║░░██╗██╔══██║░╚═══██╗░░░██║░░░
-		╚██████╔╝██████╦╝██║╚█████╔╝██║░░██║██████╔╝░░░██║░░░
-		░╚═════╝░╚═════╝░╚═╝░╚════╝░╚═╝░░╚═╝╚═════╝░░░░╚═╝░░░
-
-]]
-
 local UserInputService = game:GetService("UserInputService")
 local Players = game:GetService("Players")
 local Typing = false
@@ -24,11 +13,10 @@ end)
 
 UserInputService.InputBegan:Connect(function(Input)
 	if Input.KeyCode == KillAllKey and Typing == false then
-		for i, v in pairs(Players:GetPlayers()) do
+		for _, v in next, Players:GetPlayers() do
 			if v.Name ~= Players.LocalPlayer.Name then
 				if v.TeamColor ~= Players.LocalPlayer.TeamColor then
 					if v.Character ~= nil and v.Character.Humanoid.Health ~= 0 then
-
 						local Arguments = {
 							PartHit = workspace[v.Name].HeadHB, -- Part that the bullet hit.
 							HitPos = workspace[v.Name].HeadHB.Position, -- 3D Position of where the bullet hit.
