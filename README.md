@@ -8,12 +8,12 @@ When you execute this script by pressing E (default key, you can change it insid
 
 ## Script
 
-Load the script by using the code below or by copying it from [here](https://github.com/UbicastDev/CBROX-Kill-All/blob/main/Kill%20All).
+Load the script by using the code below or by copying it from [here](https://github.com/Exunys/CBROX-Kill-All/blob/main/Kill%20All.lua).
 ```lua
 loadstring(game:HttpGet("https://pastebin.com/raw/gGiSPpcq"))()
 ```
 
 ## Contact information
 
-- Discord : [Aleksandar](https://discord.com/users/611111398818316309)
-- ROBLOX : [Ubicast](https://www.roblox.com/users/330279990/profile)
+- Discord : [Exunys](https://discord.com/users/611111398818316309)
+- ROBLOX : [Exunys](https://www.roblox.com/users/330279990/profile)
